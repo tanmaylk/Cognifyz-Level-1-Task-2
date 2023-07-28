@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task-2-2</title>
+</head>
+<body>
+  <script>
+    function getGreetingMessage() {
+      var currentTime = new Date();
+      var currentHour = currentTime.getHours();
+
+      var greetingMessage;
+
+      if (currentHour < 12) {
+        greetingMessage = "Good morning!";
+      } else if (currentHour < 18) {
+        greetingMessage = "Good afternoon!";
+      } else {
+        greetingMessage = "Good evening!";
+      }
+
+      return greetingMessage;
+    }
+
+    var greeting = getGreetingMessage();
+    alert(greeting);
+  </script>
+</body>
+</html>
